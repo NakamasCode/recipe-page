@@ -1,0 +1,188 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: var(--stone-100);
+  color: var(--stone-900);
+  line-height: 1.6;
+}
+
+.container {
+  background-color: var(--white);
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2rem;
+  color: var(--stone-900);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.3rem;
+  color: var(--brown-800);
+  /* margin-top: 2rem; */
+  margin-bottom: 0.75rem;
+}
+
+
+hr {
+    outline: none;
+    border: none;
+    height: 1px;
+    background: var(--stone-150);
+    margin-top: 2rem;
+}
+
+
+p.description {
+  margin-bottom: 1.5rem;
+  color: var(--stone-600);
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.prep-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  color: var(--rose-800);
+  margin-bottom: 0.5rem;
+}
+
+.prep-time ul {
+  list-style: disc inside;
+  color: var(--stone-900);
+}
+
+.ingredients ul,
+.instructions ol {
+  padding-left: 1.2rem;
+}
+
+.instructions,
+.ingredients, .nutrition {
+  margin-top: 2rem;
+}
+
+.ingredients li,
+.instructions li {
+  margin-bottom: 0.5rem;
+  color: var(--stone-900);
+}
+
+.instructions ol {
+  list-style: decimal inside;
+}
+
+.nutrition p {
+  margin-bottom: 1rem;
+  color: var(--stone-600);
+}
+
+
+
+.nutrition-table div {
+  padding: .75rem 2rem;
+  display: flex;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-table div:last-child{
+  border-bottom: 0;
+}
+
+.nutrition-table div span:nth-child(2) {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+.nutrition-table div > * {
+  width: 100px;
+  margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .prep-time {
+    padding: 1.5rem;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .prep-time {
+    padding: 1.5rem;
+  }
+}
+
+
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
